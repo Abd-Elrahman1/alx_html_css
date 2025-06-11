@@ -7,6 +7,7 @@
 
 * {
   font-family: "Source Sans 3", sans-serif;
+  margin: 0;
 }
 /* body {
   background-color: #071629;
@@ -34,11 +35,12 @@ nav {
   background-image: linear-gradient(rgba(7, 22, 41, 0.2), rgba(7, 22, 41, 0.2)),
     url(images/Object.png);
   background-repeat: no-repeat;
-  background-color: #071629;
   background-size: cover;
   color: #ffffff;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding-top: 24px;
 }
 
 .hero-section {
@@ -48,7 +50,7 @@ h1 {
   font-size: 120px;
   font-weight: 900;
   color: #ffffff;
-  margin-bottom: 23px;
+  margin-bottom: -16px;
 }
 
 .three-words {
@@ -56,7 +58,7 @@ h1 {
   gap: 50px;
   align-content: center;
   justify-content: center;
-  margin-bottom: 46px;
+  margin-bottom: 64px;
 }
 .hero-section-btn {
   background-color: #c271ff;
@@ -66,6 +68,13 @@ h1 {
   height: 44px;
   border: none;
   margin-bottom: 212px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  filter: drop-shadow(0 2px 20px rgba(0, 0, 0, 0.5));
+}
+.hero-section-btn:hover {
+  filter: drop-shadow(0 2px 20px rgba(0, 0, 0, 0.123));
 }
 h2 {
   margin-bottom: 90px;
@@ -77,13 +86,31 @@ h2 {
 .pros {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   gap: 137px;
-  margin-bottom: 90px;
+  padding-bottom: 90px;
 }
 
+.pro {
+  width: 150px;
+}
 .pros img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+h3 {
+  line-height: 27px;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.pro-paragraph {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: italic;
+  font-weight: 400;
 }
