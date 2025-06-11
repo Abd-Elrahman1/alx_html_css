@@ -34,6 +34,7 @@ nav {
   background-image: linear-gradient(rgba(7, 22, 41, 0.2), rgba(7, 22, 41, 0.2)),
     url(images/Object.png);
   background-repeat: no-repeat;
+  background-color: #071629;
   background-size: cover;
   color: #ffffff;
   align-items: center;
@@ -78,6 +79,7 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 137px;
+  margin-bottom: 90px;
 }
 
 .pros img {
