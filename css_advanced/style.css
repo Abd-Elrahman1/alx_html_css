@@ -114,3 +114,115 @@ h3 {
   font-style: italic;
   font-weight: 400;
 }
+
+/* Testemonials  */
+
+.testemonials-section {
+  display: flex;
+  height: 160px;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #c271ff;
+  padding-top: 108px;
+  padding-bottom: 124px;
+
+  gap: 53px;
+}
+
+.testemonial-quote {
+  color: #ffffff;
+  font-size: 22px;
+  width: 943px;
+  height: 160px;
+}
+
+.testemonial-quote blockquote {
+  margin-bottom: 22px;
+}
+
+.testemonial-quote h3 {
+  margin-bottom: 0;
+}
+
+/* Tutorials */
+
+.tutorials-section {
+  height: 450px;
+  margin-top: 87px;
+  display: grid;
+  grid-template-rows: 0.5fr 3fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.tutorials-heading {
+  margin-bottom: 75px;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+}
+.tutorials-section span {
+  color: #c271ff;
+  font-weight: bold;
+}
+
+.tutotial-cards {
+  width: 1228px;
+  display: flex;
+  gap: 31px;
+  padding: 0 58px;
+}
+
+.tutotial-card {
+  width: 255px;
+  height: 335px;
+}
+.card-image {
+  position: relative;
+}
+.play-btn {
+  position: absolute;
+
+  transform: translate(-250%, 80%);
+}
+.tutorial-title {
+  font-size: 16px;
+  margin-top: 18px;
+  margin-bottom: 7.5px;
+}
+
+.tutorial-paragraph {
+  font-size: 14px;
+  color: rgba(7, 22, 41, 0.516);
+  margin-bottom: 13.5px;
+}
+.tutorial-author {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 14px;
+}
+.tutorial-author h4 {
+  margin-bottom: 0;
+}
+.author-img {
+  width: 30px;
+  height: 30px;
+}
+
+.tutorial-author h4 {
+  font-size: 14px;
+  color: #c271ff;
+}
+.rating {
+  color: #c271ff;
+  font-size: 14px;
+  display: flex;
+  gap: 79px;
+}
+
+.rating img {
+  width: 107px;
+  height: 15px;
+}
