@@ -1,117 +1,517 @@
-/* Reset some default styles */
+/********************* Universal Styling **************************/
+
 * {
-  margin: 0;
+  max-width: 140rem;
+  margin: 0 auto; /* center */
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
+}
+
+html {
+  /* Percentage of user's browser font-size setting (10px /16px) 1rem = 10px */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* scroll-behavior: smooth; */
 }
 
 body {
-  font-family: "Arial", sans-serif;
-  color: white;
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
 }
 
-/* Variables */
-:root {
-  --primary-color: #ff6565;
-  --max-width: 1000px;
+button:hover,
+button:active {
+  opacity: 0.9;
 }
 
-.hero {
-  background: url("images/headphones_hero_1.jpg") no-repeat center center/cover;
-  height: 100vh;
-  position: relative;
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.text-color {
+  color: #071629;
 }
 
 .container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 63.7rem;
 }
 
-/* Navbar */
-.navbar {
+.description {
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+/********************* Header Styling **************************/
+
+.header {
+  background-image: url("images/headphones_hero_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center;
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 11rem;
+}
+
+.hero-section {
+  padding-bottom: 11.5rem;
+}
+/********************* Navbar Styling **************************/
+
+.logo {
+  width: 16.1rem;
+  height: 3.2rem;
+}
+
+.nav-bar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-items: center;
+  gap: 58.4;
+  padding-top: 2.7rem;
+  margin-bottom: 31.2rem;
 }
 
 .nav-links {
   display: flex;
-  list-style: none;
+  gap: 4.1rem;
 }
 
-.nav-links li a {
-  color: white;
+.nav-link:link,
+.nav-link:visited {
   text-decoration: none;
-  margin-left: 30px;
-  transition: color 0.3s;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
-.nav-links li a:hover {
-  color: var(--primary-color);
+.nav-link:hover,
+.nav-link:active {
+  color: #ff6565;
 }
 
-.mobile-menu {
+.primary-heading {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.paragraph {
+  font-weight: 600;
+}
+
+.spacing {
+  margin-bottom: 4rem;
+}
+
+.cta-btn:link,
+.cta-btn:visited {
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16.2rem;
+  height: 4.4rem;
+  border-radius: 22px;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #ff6565;
+  margin-bottom: 6.5rem;
+}
+
+/********************* What We DO Styling **************************/
+.what-we-do-section {
+  margin-bottom: 11rem;
+}
+.what-we-do-text {
+  margin-bottom: 9.7rem;
+}
+
+.secondary-heading {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.what-we-do-features {
+  display: flex;
+  max-width: 100.2rem;
+  gap: 5.8rem;
+}
+
+.what-we-do-card {
+  max-width: 20.7rem;
+}
+
+.tertiary-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+}
+.what-we-do-icon {
+  width: 8rem;
+  color: #ff6565;
+  margin-bottom: 2.5rem;
+}
+.caption {
+  color: #071629cb;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+/********************* Results Styling **************************/
+
+.results-section {
+  background-image: url("images/headphones_hero_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  color: #ffffff;
+  line-height: 1.5;
+  padding-top: 14.1rem;
+  padding-bottom: 7.9rem;
+  margin-bottom: 11rem;
+}
+
+.results-text {
+  margin-bottom: 5.6rem;
+}
+.percentage-caption {
+  font-size: 1.4em;
+  font-weight: 200;
+  opacity: 90%;
+}
+
+.results-percentage {
+  background-image: url(images/pentagone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 18.1rem;
+  height: 17.2rem;
+  margin: 0;
+  padding: 7rem 3.4rem 2.9rem 3.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.percentage {
+  font-size: 4.6rem;
+  font: 700;
+}
+.penta-shapes {
+  display: flex;
+  gap: 7.6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.percentage-text {
+  position: absolute;
+  bottom: 20%;
+}
+
+/********************* Form Styling **************************/
+
+.form {
+  max-width: 33.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+  align-items: start;
+  justify-items: start;
+  text-align: right;
+  margin-bottom: 12.8rem;
+}
+
+.input-field::placeholder {
+  text-align: start;
+  color: #07162994;
+}
+
+.input-field {
+  color: #071629;
+  padding: 1.2rem 2rem 1.2rem 0.5rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-bottom: 2px solid #97979765;
+  border-width: 1px;
+}
+
+.input-field:focus {
+  outline: none;
+  background-color: #ff65654f;
+}
+
+.submit-btn {
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16.2rem;
+  height: 4.4rem;
+  border-radius: 22px;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #ff6565;
+  margin-bottom: 6.5rem;
+  margin: 0;
+  align-self: center;
+}
+/********************* footer Styling **************************/
+
+.footer-section {
+  height: 24.9rem;
+  background-color: #071629;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.3fr;
+  column-gap: 71rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.social-media-list {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.copyright {
+  color: #ffffff5e;
+  font-size: 1.2rem;
+  grid-column: 1/-1;
+}
+
+.icon-link:link,
+.icon-link:visited {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.icon-size {
+  width: 30px;
+  height: 30px;
+  transition: all 0.5s ease-in;
+}
+
+/********************* Media queries at 768px (48em) **************************/
+/********************* 1em = 1rem = 16px **************************/
+
+@media (max-width: 57em) {
+  .container {
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+  }
+  /********************* WHAT TO DO SECTION **************************/
+
+  .what-we-do-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5.8rem;
+    row-gap: 9.7rem;
+  }
+  /********************* RESULTS SECTION **************************/
+  .penta-shapes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 0;
+    row-gap: 4.2rem;
+    justify-items: center;
+  }
+  /********************* FOOTER SECTION **************************/
+
+  .footer-section {
+    column-gap: 20rem;
+  }
+}
+
+/********************* MOBILE NAV STYLING **************************/
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
   display: none;
 }
 
-/* Hero content */
-.hero-content {
-  text-align: center;
-  margin-top: 150px;
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #ffff;
 }
 
-.hero-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+.icon-mobile-nav[name="close-circle-outline"] {
+  display: none;
 }
 
-.hero-content p {
-  margin-bottom: 20px;
-}
-
-.cta-button {
-  background-color: var(--primary-color);
-  border: none;
-  padding: 15px 30px;
-  color: white;
-  font-weight: bold;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: opacity 0.3s;
-}
-
-.cta-button:hover {
-  opacity: 0.9;
-}
-
-.description {
-  margin-top: 30px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 0.9rem;
-}
-
-/* Mobile responsive */
-@media screen and (max-width: 480px) {
-  .nav-links {
-    display: none;
-  }
-
-  .mobile-menu {
+/********************* Media queries at 375px (23.44em) **************************/
+@media (max-width: 27em) {
+  /********************* MOBILE NAV **************************/
+  .btn-mobile-nav {
     display: block;
   }
+  .nav-bar {
+    position: relative;
+    margin-bottom: 26.6rem;
+  }
+  .nav-links {
+    background-color: #071629e5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    /* overflow-x: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    transition: all 0.5s ease-out;
 
-  .hero-content {
-    margin-top: 100px;
+    /* HIDING NAVIGATION */
+    opacity: 0;
+
+    /* Make it unaccessible to mouse */
+    pointer-events: none;
+    visibility: hidden;
   }
 
-  .hero-content h1 {
-    font-size: 1.8rem;
+  /* .no-scroll .header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    overflow-y: hidden;
+  } */
+  .nav-open .nav-links {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    overflow: hidden;
+  }
+  .nav-open .icon-mobile-nav[name="close-circle-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 2.4rem;
+  }
+
+  /*********************  hero section **************************/
+  .header {
+    background-size: cover;
+    background-position-x: 35%;
+  }
+  .hero-section {
+    padding-bottom: 10.6rem;
+  }
+  .container {
+    max-width: 33.5rem;
+  }
+  .primary-heading {
+    margin-bottom: 0.5rem;
+  }
+
+  .paragraph {
+    margin-bottom: 2rem;
+  }
+
+  .caption {
+    width: 30.5rem;
+  }
+
+  /*********************  WHAT WE DO section **************************/
+  .what-we-do-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .caption:last-child {
+    width: 100%;
   }
 
   .description {
-    font-size: 0.8rem;
+    max-width: 32.5rem;
+    margin: 0 2rem 0 2rem;
+  }
+  /*********************  RESULTS section **************************/
+
+  .results-section {
+    background-image: none;
+    padding-top: 0;
+    padding-bottom: 6.9rem;
+    background-size: cover;
+    background-color: #071629;
+  }
+  .mobile-background {
+    background-image: url("images/headphones_hero_2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 12.5rem 3.5rem 7.7rem 3.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 50px #0716299d;
+  }
+
+  .results-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    max-width: 30.5rem;
+    margin: 0;
+  }
+
+  .description:last-child {
+    margin: 0;
+    padding: 0;
+  }
+  .tertiary-heading:last-child {
+    padding: 0;
+    margin: 0;
+  }
+  .penta-shapes {
+    box-shadow: inset 0 0 50px #07162983;
+
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  /*********************  FORM section **************************/
+  .form {
+    margin-bottom: 13rem;
+  }
+  /*********************  FOOTER section **************************/
+  .footer-section {
+    padding: 4.8rem 10.6rem 3.4rem 10.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
   }
 }
