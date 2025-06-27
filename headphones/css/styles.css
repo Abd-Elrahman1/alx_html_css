@@ -1,7 +1,7 @@
 /********************* Universal Styling **************************/
 
 * {
-  max-width: 140rem;
+  max-width: 100%;
   margin: 0 auto; /* center */
   padding: 0;
   box-sizing: border-box;
@@ -12,7 +12,7 @@ html {
   /* Percentage of user's browser font-size setting (10px /16px) 1rem = 10px */
   font-size: 62.5%;
   overflow-x: hidden;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 body {
